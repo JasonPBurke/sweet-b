@@ -270,7 +270,7 @@ button:focus {
   border-radius: 0.5rem;
   box-shadow: 0px 0px 10px grey;
   width: calc(100% - 1px);
-  height: 530px;
+  height: 70vh;
 }
 
 .close-button {
