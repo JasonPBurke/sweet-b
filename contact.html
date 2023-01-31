@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Contact Sweet B's</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <nav class="header1" id="contact-header">
+          <a id="contact-header-logo" href="./index.html#home">
+            <div class="logo-plus-name">
+              <p>Sweet B's</p>
+              <img
+                class="logo"
+                src="./images/sweet-bs-mustache.png"
+                alt="mustache logo"
+              />
+              <p style="font-size: 13px">Texas Whipped Brittle</p>
+            </div>
+          </a>
+
+          <ul class="nav-list">
+            <li><a href="./index.html#home">Home</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#menu">Menu</a></li>
+            <li><a href="./index.html#events">Events</a></li>
+          </ul>
+          <a style="display: none" href="./contact.html">
+            <button>Contact</button>
+          </a>
+        </nav>
+      </header>
+      <div class="form-container">
+        <h2>contact us</h2>
+        <h3>we'd love to hear from you!</h3>
+        <form action="/form/submit" method="post">
+          <div class="input__styled form-name">
+            <input type="text" id="name" name="name" placeholder="" required />
+            <label for="name">name</label>
+          </div>
+          <div class="input__styled form-email">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder=""
+              required
+            />
+            <label for="email">e-mail</label>
+          </div>
+          <div class="input__styled form-phone">
+            <input type="tel" id="phone" name="phone" placeholder="" required />
+            <label for="phone">phone</label>
+          </div>
+          <div class="input__styled form-message">
+            <textarea name="message" id="message" rows="10" required></textarea>
+            <label for="message">message</label>
+          </div>
+          <input class="form-submit" type="submit" value="Send" />
+        </form>
+      </div>
+      <footer>
+        <div class="footer-content">
+          <h3>Sweet B's Texas Whipped Brittle</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dignissimos assumenda consequatur aspernatur eaque exercitationem
+            fuga.
+          </p>
+          <ul class="socials">
+            <li>
+              <a href="#"><i class="bx bxl-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            copyright &copy;2023 Sweet B's. Designed by <span>fuzzylogic</span>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

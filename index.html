@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"
+    />
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <title>Sweet B's</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <nav class="header1" id="header1">
+          <a href="./index.html#home">
+            <div class="logo-plus-name">
+              <p>Sweet B's</p>
+              <img
+                class="logo"
+                src="./images/sweet-bs-mustache.png"
+                alt="mustache logo"
+              />
+              <p style="font-size: 13px">Texas Whipped Brittle</p>
+            </div>
+          </a>
+
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#events">Events</a></li>
+          </ul>
+          <a href="./contact.html"><button>Contact</button></a>
+        </nav>
+      </header>
+      <div class="parallax" id="home"></div>
+      <main>
+        <div id="about" style="height: 75px"></div>
+        <div class="about" id="">
+          <h2>About Sweet B's</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+            reprehenderit ab nisi totam saepe minima necessitatibus sunt, ipsum
+            accusamus. Eius dolore eaque, blanditiis similique dolorem ad est
+            debitis esse laudantium. Deleniti voluptas magnam, illum facilis
+            neque quia mollitia molestias ipsam nesciunt natus id quisquam
+            dolores sequi consequatur sapiente eos numquam, voluptate quae, qui
+            nihil asperiores veniam quasi at saepe. Et repudiandae officiis
+            eveniet? Vel eius reprehenderit laborum iure dolore dolores possimus
+            temporibus debitis culpa odit!
+          </p>
+        </div>
+        <div id="menu" style="height: 75px"></div>
+        <div class="menu" id="">
+          <h2>Our Menu</h2>
+          <div class="card-container">
+            <div class="single-card-container">
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-back">
+                  <h3>Chocolate Mint Pecan</h3>
+                  <p>
+                    Allergen Warning: Pecan, Butter, Cocoa Powder, Corn Syrup,
+                    Chocolate Mint Pieces
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="single-card-container">
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-back">
+                  <h3>Original Peanut</h3>
+                  <p>
+                    Allergen Warning: Pecan, Butter, Cocoa Powder, Corn Syrup,
+                    Chocolate Mint Pieces
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="single-card-container">
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-back">
+                  <h3>Cinnamon Roll Pecan</h3>
+                  <p>
+                    Allergen Warning: Pecan, Butter, Cocoa Powder, Corn Syrup,
+                    Chocolate Mint Pieces
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="single-card-container">
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-back">
+                  <h3>Cranberry Oatmeal Pecan</h3>
+                  <p>
+                    Allergen Warning: Pecan, Butter, Cocoa Powder, Corn Syrup,
+                    Chocolate Mint Pieces
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="single-card-container">
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-back">
+                  <h3>Salted Caramel Pecan</h3>
+                  <p>
+                    Allergen Warning: Pecan, Butter, Cocoa Powder, Corn Syrup,
+                    Chocolate Mint Pieces
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="single-card-container">
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-back">
+                  <h3>Chocolate Mint Pecan</h3>
+                  <p>
+                    Allergen Warning: Pecan, Butter, Cocoa Powder, Corn Syrup,
+                    Chocolate Mint Pieces
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="modal-map-container">
+            <span class="close-button">&times;</span>
+            <div id="map"></div>
+          </div>
+        </div>
+        <div id="events" style="height: 75px"></div>
+        <div class="events" id="">
+          <h2>how to find us</h2>
+          <div class="events-container">
+            <div class="date-container">
+              <div class="day">15</div>
+              <div class="month">May</div>
+            </div>
+            <div class="info-container">
+              <div class="event-name">old gruene market days</div>
+              <div class="event-location">Gruene, Texas</div>
+            </div>
+            <button class="event-map modal-trigger">
+              map
+              <div class="event-address">
+                1724 Hunter Rd, New Braunfels, TX 78130
+              </div>
+            </button>
+            <div class="event-link">
+              <a
+                href="https://gruenemarketdays.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="events-container">
+            <div class="date-container">
+              <div class="day">26</div>
+              <div class="month">May</div>
+            </div>
+            <div class="info-container">
+              <div class="event-name">Go Greene or Go Home</div>
+              <div class="event-location">Green, Texas</div>
+            </div>
+            <button class="event-map modal-trigger">map</button>
+            <div class="event-link">
+              <a href="">Learn More</a>
+            </div>
+          </div>
+          <div class="events-container">
+            <div class="date-container">
+              <div class="day">05</div>
+              <div class="month">June</div>
+            </div>
+            <div class="info-container">
+              <div class="event-name">Budafest</div>
+              <div class="event-location">Buda, Texas</div>
+            </div>
+            <button class="event-map modal-trigger">
+              map
+              <div class="event-address">880 main street, buda, TX 78610</div>
+            </button>
+            <div class="event-link">
+              <a href="">Learn More</a>
+            </div>
+          </div>
+          <div class="events-container">
+            <div class="date-container">
+              <div class="day">04</div>
+              <div class="month">July</div>
+            </div>
+            <div class="info-container">
+              <div class="event-name">San Marcos Fun Fest</div>
+              <div class="event-location">San Marcos, Texas</div>
+            </div>
+            <button class="event-map modal-trigger">map</button>
+            <div class="event-link">
+              <a href="">Learn More</a>
+            </div>
+          </div>
+          <div class="events-container">
+            <div class="date-container">
+              <div class="day">22</div>
+              <div class="month">July</div>
+            </div>
+            <div class="info-container">
+              <div class="event-name">Chrismas in July Fest</div>
+              <div class="event-location">Austin, Texas</div>
+            </div>
+            <button class="event-map modal-trigger">map</button>
+            <div class="event-link">
+              <a href="">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-content">
+          <h3>Sweet B's Texas Whipped Brittle</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dignissimos assumenda consequatur aspernatur eaque exercitationem
+            fuga.
+          </p>
+          <ul class="socials">
+            <li>
+              <a href="#"><i class="bx bxl-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            copyright &copy;2023 Sweet B's. Designed by <span>fuzzylogic</span>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <a href="#home"><i class="return-to-top bx bx-up-arrow-circle"></i></a>
+  </body>
+</html>
