@@ -588,15 +588,39 @@ footer {
   .events-container {
     grid-template-areas:
       "date date"
-      "info link";
+      "info link"
+      "info map";
     grid-template-columns: 2fr 1fr;
     position: relative;
+    padding-bottom: 0.5rem;
+  }
+
+  .info-container {
+    padding-bottom: 0;
+    padding-top: 0.25rem;
+    display: grid;
+    align-self: stretch;
+  }
+
+  .info-container > * {
+    align-self: center;
   }
 
   .event-map {
-    grid-area: unset;
-    display: none;
-    position: absolute;
+    justify-self: start;
+    align-self: center;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+
+  .event-link {
+    padding-left: 0.25rem;
+    padding-top: 0.25rem;
+  }
+
+  .events-container,
+  .form-container,
+  .form-container > * {
+    width: 90vw;
   }
 
   .form-container > form {
@@ -606,6 +630,13 @@ footer {
       "phone phone"
       "message message"
       "submit submit";
+  }
+
+  .form-container > h2 {
+    font-size: 2rem;
+  }
+  .form-container > h3 {
+    font-size: 1rem;
   }
 
   .footer-content,
