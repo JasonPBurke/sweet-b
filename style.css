@@ -524,10 +524,18 @@ footer {
 }
 
 @media (max-width: 810px) {
+  .form-container {
+    padding-top: 1rem;
+  }
   #contact-header-logo {
     margin: auto;
   }
 
+  .header1 {
+    transform: scale(1.3);
+    justify-content: space-around;
+    padding-top: 1rem;
+  }
   .header1 > ul {
     position: relative;
   }
@@ -642,5 +650,18 @@ footer {
   .footer-content,
   .footer-bottom {
     padding: 1rem 1rem;
+  }
+}
+
+@media (max-width: 455px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .single-card-container {
+    transform: scale(0.75);
+  }
+  .card-container {
+    row-gap: 0;
   }
 }
