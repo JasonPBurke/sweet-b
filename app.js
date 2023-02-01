@@ -12,20 +12,6 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-//******** load mapquest maps *********/
-
-// const mapAddress = (window.onload = function () {
-//   L.mapquest.key = "ck2OXUAJsF0iz999XGQ62jyXo8AXOVp7";
-
-//   var map = L.mapquest.map("map", {
-//     center: [37.7749, -122.4194],
-//     layers: L.mapquest.tileLayer("map"),
-//     zoom: 12,
-//   });
-
-//   // map.addControl(L.mapquest.control());
-// });
-
 //***** trigger map modal open and close ******/
 
 const modal = document.querySelector(".modal");
@@ -43,6 +29,8 @@ function windowOnClick(event) {
     toggleModal();
   }
 }
+
+//******** load mapquest maps *********/
 
 function fetchMap(address) {
   L.mapquest.key = "ck2OXUAJsF0iz999XGQ62jyXo8AXOVp7";
@@ -63,7 +51,6 @@ function fetchMap(address) {
       .setContent("Event is located here.")
       .openOn(map);
   }
-  // map.addControl(L.mapquest.control());
 }
 
 function destroyMap() {
@@ -82,6 +69,5 @@ triggerArray.forEach((trigger) =>
   })
 );
 
-// triggerArray.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
