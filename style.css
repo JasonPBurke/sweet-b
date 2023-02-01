@@ -114,7 +114,6 @@ button:focus {
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  /* width: 80%; */
   width: clamp(350px, 80%, 1200px);
   gap: 4rem 1.5rem;
   padding: 1rem;
@@ -547,7 +546,7 @@ footer {
 
   .parallax {
     min-height: 400px;
-    background-position: right -150px top -220px;
+    background-position: left center;
   }
 
   .about {
