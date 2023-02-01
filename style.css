@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cherry+Swash:wght@400;700&display=swap");
 
+:root {
+}
+
 *,
 *::before,
 *::after {
@@ -113,7 +116,9 @@ button:focus {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(calc(350px * 0.8), 1fr));
+
   width: clamp(350px, 80%, 1200px);
   gap: 4rem 1.5rem;
   padding: 1rem;
@@ -121,8 +126,10 @@ button:focus {
 }
 
 .single-card-container {
-  width: 350px;
-  height: 500px;
+  /* width: 350px;
+  height: 500px; */
+  width: calc(350px * 0.66);
+  height: calc(500px * 0.66);
   perspective: 800px;
 }
 
@@ -516,7 +523,7 @@ footer {
   right: 1.5rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .card-container {
     width: 100%;
   }
