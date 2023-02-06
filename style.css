@@ -191,6 +191,7 @@ button:focus {
   grid-template-areas: "date info map link";
   grid-template-columns: 1fr 2fr 1fr 1fr;
   width: clamp(250px, 70vw, 850px);
+  /* height: fit-content; */
   background-color: aliceblue;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   line-height: 1.75em;
@@ -567,6 +568,7 @@ footer {
       "date date date"
       "info map link";
     grid-template-columns: 2fr 1fr 1fr;
+    height: fit-content;
   }
 
   .date-container {
