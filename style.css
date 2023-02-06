@@ -611,6 +611,7 @@ footer {
     grid-template-columns: 2fr 1fr;
     /* position: relative; */
     padding-bottom: 0.5rem;
+    height: max-content;
   }
 
   .info-container {
