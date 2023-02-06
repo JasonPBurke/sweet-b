@@ -609,7 +609,7 @@ footer {
       "info link"
       "info map";
     grid-template-columns: 2fr 1fr;
-    position: relative;
+    /* position: relative; */
     padding-bottom: 0.5rem;
   }
 
