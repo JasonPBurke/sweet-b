@@ -135,6 +135,7 @@ button:focus {
 
 .single-card-container:hover > .card {
   cursor: pointer;
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -164,6 +165,7 @@ button:focus {
 
 .card-back {
   background-color: aliceblue;
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
