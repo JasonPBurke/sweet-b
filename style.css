@@ -164,6 +164,8 @@ button:focus {
   background-image: url(./images/chocolateMintPecan500x350.webp);
   background-image: url(./images/chocolateMintPecan500x350.jpg);
   background-position: top center;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateX(0deg);
 }
 
 .card-back {
