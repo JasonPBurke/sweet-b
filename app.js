@@ -15,14 +15,11 @@ window.onscroll = function () {
 //***** flip cards on touch ******/
 singleCardContainers = document.querySelectorAll('.single-card-container');
 for (let i of singleCardContainers) {
-  console.log(i);
   i.addEventListener('touchstart', () => {
     for (let j of singleCardContainers) {
       j.childNodes[1].style.transform = 'none';
     }
     i.childNodes[1].style.transform = 'rotateY(180deg)';
-    console.log(i.childNodes[1]);
-    console.log('here');
   });
 }
 
