@@ -134,7 +134,8 @@ button:focus {
   perspective: 800px;
 }
 
-.single-card-container:hover > .card {
+.single-card-container:hover > .card,
+.single-card-container:active > .card {
   cursor: pointer;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
