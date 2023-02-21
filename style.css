@@ -135,23 +135,24 @@ button:focus {
 }
 
 .single-card-container:hover > .card,
+.single-card-container:focus > .card,
 .single-card-container:active > .card {
   cursor: pointer;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
-.flipper > .card {
+/* .flipper > .card {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-}
+} */
 
-@media (hover: hover) and (pointer: coarse) {
+/* @media (hover: hover) and (pointer: coarse) {
   .flipper > .card {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
-}
+} */
 
 .card {
   width: 100%;
