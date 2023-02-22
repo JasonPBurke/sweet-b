@@ -171,6 +171,7 @@ button:focus {
   border-radius: 1rem;
   box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.45);
   position: absolute;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 

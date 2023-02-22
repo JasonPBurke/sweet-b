@@ -22,6 +22,11 @@ for (let i of singleCardContainers) {
     i.childNodes[1].style.transform = 'rotateY(180deg)';
   });
 }
+// document.addEventListener('touchstart', () => {
+//   for (let i of singleCardContainers) {
+//     i.childNodes[1].style.transform = 'none';
+//   }
+// });
 
 //***** trigger map modal open and close ******/
 
